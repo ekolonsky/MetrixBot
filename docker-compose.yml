@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mbot:
+    build: .
+    container_name: mbot
+    ports:
+     - "8443:8443"
+    volumes:
+     - .:/code
+    restart: unless-stopped
